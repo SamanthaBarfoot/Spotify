@@ -7,12 +7,13 @@
 # Pre-requisites: -
 # Any other information needed? -
 
-#install.packages("usethis")
 #### Workspace setup ####
 library(tidyverse)
 library(spotifyr)
 
 #### Download data ####
-beyonce <- get_artist_audio_features("beyonce")
-saveRDS(beyonce, "data/raw_data/beyonce.rds")
-         
+fifth_harmony <- get_artist_audio_features("fifth harmony")
+
+#### Save data ####
+saveRDS(fifth_harmony, "data/raw_data/fifth_harmony.rds")
+       
